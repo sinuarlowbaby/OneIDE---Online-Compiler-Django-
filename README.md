@@ -1,18 +1,20 @@
 <div align="center">
 
-# 📝 OneIDE - Online Compiler & Coding Community Platform
+# 📝 **OneIDE**
+### 🌐 Online Compiler & Coding Community Platform
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-Framework-092E20?style=for-the-badge&logo=django&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)
+<img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Django-Framework-092E20?style=for-the-badge&logo=django&logoColor=white">
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge">
 
-<p align="center">
-  <strong>Compile. Collaborate. Connect.</strong><br>
-  A comprehensive web application designed to facilitate coding, learning, and group collaboration.
-</p>
+<br/>
 
-[Report Bug](https://github.com/your-username/your-repo-name/issues) · [Request Feature](https://github.com/your-username/your-repo-name/issues)
+### ⚡ *Compile. Collaborate. Connect.*
+
+A powerful **online compiler + coding community platform** with real-time execution, group collaboration, and admin control.
+
+[🐞 Report Bug](https://github.com/your-username/your-repo-name/issues) • [✨ Request Feature](https://github.com/your-username/your-repo-name/issues)
 
 </div>
 
@@ -20,171 +22,154 @@
 
 ## 📖 Overview
 
-This platform provides a robust **online compiler** for multiple languages, a community hub for sharing and discussing code, and administrative tools for managing users and content. It bridges the gap between learning to code and collaborating in a team environment.
+**OneIDE** is a full-stack web application that offers:
+- A **multi-language online compiler**
+- A **coding community for sharing programs**
+- **Group collaboration** with permissions
+- A complete **admin dashboard** for moderation  
+
+It bridges the gap between **learning to code** and **collaborative software development**.
 
 ---
-### ✨ Features
 
-#### 🔐 User Authentication & Management
+## ✨ Features
 
-  * **Secure Login & Registration:** User accounts with secure password handling.
-  * **Role-Based Access:** Distinct roles for 'User' and 'Admin' with tailored dashboards and permissions.
-  * **Forgot Password:** Password recovery via email using SMTP.
-  * **Profile Management:** Users can manage their personal details and profile picture.
-  * **User Blocking/Unblocking:** Admins can manage user access by blocking or unblocking accounts.
+### 🔐 User Authentication & Management
+- ✅ Secure Login & Registration  
+- ✅ Role-Based Access (Admin / User)  
+- ✅ Forgot Password via Email (SMTP)  
+- ✅ Profile Management with Image Upload  
+- ✅ Admin Blocking & Unblocking of Users  
 
-#### 💻 Online Compiler & Coding Tools
+---
 
-  * **Multi-Language Support:** Integrated compilers for **Python**, **Java**, **C**, and **C++**.
-  * **Real-time Compilation:** Execute code directly within the browser.
-  * **Code Saving:** Save code snippets with topic, language, and date for future reference.
-  * **Code History:** View a history of executed and saved code.
-  * **Edit Saved Code:** Modify and update previously saved code snippets.
+### 💻 Online Compiler & Coding Tools
+- 🌍 Supports **Python, Java, C, C++**
+- ⚡ Real-time Code Execution
+- 💾 Save Programs with Topic, Language & Date
+- 🕒 View Code Execution History
+- ✏️ Edit & Update Saved Programs
 
-#### 🤝 Community & Collaboration
+---
 
-  * **Code Sharing:**
-      * **Individual Sharing:** Share code directly with other users.
-      * **Group Sharing:** Share code within created groups with 'Static' (read-only) or 'Editable' permissions.
-  * **Group Management:**
-      * Create and manage user groups with names, descriptions, and icons.
-      * Add or remove members and assign roles (e.g., Admin, User).
-      * Delete groups or specific group content.
-  * **Feedback & Complaints:**
-      * Users can send feedback and ratings.
-      * Users can lodge complaints, and admins can view and reply to them.
-  * **Example Programs:** Access a library of sample programs categorized by language and topic for learning.
+### 🤝 Community & Collaboration
+- 🔄 **Code Sharing**
+  - Individual Sharing
+  - Group Sharing (Static / Editable)
+- 👥 **Group Management**
+  - Create Groups with Icons
+  - Add/Remove Members
+  - Assign Roles (Admin, User)
+- ⭐ Feedback & Rating System
+- 📢 Complaint System with Admin Replies
+- 📚 Library of Example Programs
 
-#### 🛠️ Admin Dashboard
+---
 
-  * **User Management:** View all users, manage their status (block/unblock), and view individual profiles.
-  * **Content Moderation:** View all shared code, complaints, and feedback.
-  * **Sample Program Management:** Add, edit, and manage the library of example programs.
-  * **Complaint Resolution:** Reply to user complaints directly from the dashboard.
+### 🛠️ Admin Dashboard
+- 👤 View & Manage Users
+- 🚫 Block / Unblock Accounts
+- 🧾 Monitor Shared Code
+- 📬 Handle Complaints & Feedback
+- 📖 Manage Example Programs
 
-### 🛠️ Tech Stack
-
-  * **Backend Framework:** Django (Python)
-  * **Database:** MySQL 
-  * **Frontend:** HTML, CSS, JavaScript, Bootstrap
-  * **Authentication:** Django Auth System
-  * **Email Services:** Python `smtplib` for email notifications
-
-### 🚀 Getting Started
-
-1.  **Clone the Repository:**
-
-    ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
-    ```
-
-2.  **Install Dependencies:**
-    Ensure Python is installed, then run:
-
-    ```bash
-    pip install django
-    ```
-
-3.  **Database Migration:**
-
-    ```bash
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
-
-4.  **Create Superuser (Admin):**
-
-    ```bash
-    python manage.py createsuperuser
-    ```
-
-5.  **Run the Server:**
-
-    ```bash
-    python manage.py runserver
-    ```
-
-6.  **Access the Application:**
-    Open your browser and navigate to `http://127.0.0.1:8000/`.
-
-7. **DataBase setup**⚙️ Import Instructions
-To set up the database using the provided SQL file (SQLyog/MySQL Dump), follow these steps:
-
-Option 1: Using Command Line (MySQL)
-Create the Database:
-
-SQL
-
-CREATE DATABASE oneide;
-Import the SQL File: Navigate to the folder containing your .sql file and run:
-
-Bash
-
-mysql -u [your_username] -p oneide < oneide_dump.sql
-Option 2: Using Django (Fresh Start)
-If you prefer to ignore the dump and create fresh tables based on your models.py:
-
-Bash
-
-# Delete existing migrations (optional)
-# Create the database 'oneide' in your SQL server
-python manage.py makemigrations
-python manage.py migrate
-🧩 Relationship Diagram (Simplified)
-Code snippet
-
-erDiagram
-    LOGIN ||--|| USER : credentials
-    USER ||--o{ CODE : saves
-    USER ||--o{ GROUP : creates
-    GROUP ||--|{ MEMBER : contains
-    USER ||--|{ MEMBER : joins
-    USER ||--o{ FEEDBACK : writes
-    USER ||--o{ SHARE_P2P : sends
-    GROUP ||--o{ SHARE_GROUP : receives
+---
 
 ## 🛠️ Tech Stack
 
-| Component | Technology |
-| :--- | :--- |
-| **Backend** | ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white) ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
-| **Database** | ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) (Production compatible with MySQL) |
-| **Services** | SMTP (Email Notifications) |
+| Layer | Technology |
+|------|------------|
+| **Backend** | Django, Python |
+| **Frontend** | HTML, CSS, JavaScript, Bootstrap |
+| **Database** | MySQL |
+| **Auth** | Django Auth System |
+| **Email** | SMTP (`smtplib`) |
 
----    
+---
 
-### 📂 Project Structure
+## 🚀 Getting Started
 
-```
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+2️⃣ Install Dependencies
+bash
+Copy code
+pip install django
+3️⃣ Run Migrations
+bash
+Copy code
+python manage.py makemigrations
+python manage.py migrate
+4️⃣ Create Admin
+bash
+Copy code
+python manage.py createsuperuser
+5️⃣ Start Server
+bash
+Copy code
+python manage.py runserver
+6️⃣ Open in Browser
+cpp
+Copy code
+http://127.0.0.1:8000/
+🗄️ Database Setup
+✅ Option 1: Import SQL Dump
+sql
+Copy code
+CREATE DATABASE oneide;
+bash
+Copy code
+mysql -u your_username -p oneide < oneide_dump.sql
+✅ Option 2: Fresh Django Setup
+bash
+Copy code
+python manage.py makemigrations
+python manage.py migrate
+🧩 ER Relationship (Simplified)
+pgsql
+Copy code
+LOGIN ||--|| USER : credentials
+USER  ||--o{ CODE : saves
+USER  ||--o{ GROUP : creates
+GROUP ||--|{ MEMBER : contains
+USER  ||--|{ MEMBER : joins
+USER  ||--o{ FEEDBACK : writes
+USER  ||--o{ SHARE_P2P : sends
+GROUP ||--o{ SHARE_GROUP : receives
+📂 Project Structure
+pgsql
+Copy code
 app/
-├── migrations/       # Database migrations
-├── static/           # Static files (CSS, JS, Images)
-├── templates/        # HTML Templates
-│   ├── admin/        # Admin-specific templates
-│   ├── user/         # User-specific templates
+├── migrations/
+├── static/
+├── templates/
+│   ├── admin/
+│   ├── user/
 │   ├── login.html
 │   ├── registration.html
-│   └── ...
-├── admin.py          # Django Admin configuration
-├── apps.py           # App configuration
-├── models.py         # Database models
-├── tests.py          # Tests
-├── urls.py           # URL routing
-└── views.py          # View functions (Business logic)
-```
+├── admin.py
+├── apps.py
+├── models.py
+├── tests.py
+├── urls.py
+└── views.py
+🤝 Contributing
+Fork the Repository
 
-### 🤝 Contributing
+Create a Feature Branch
 
-Contributions are welcome\! Please follow these steps:
+Commit Your Changes
 
-1.  **Fork** the repository.
-2.  Create a **Feature Branch**.
-3.  **Commit** your changes.
-4.  **Push** to the branch.
-5.  Open a **Pull Request**.
+Push to Your Branch
 
-### 📄 License
+Open a Pull Request
 
-This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
+📄 License
+This project is licensed under the MIT License ✅
+Free to use for educational and commercial purposes.
+
+<div align="center">
+💙 If you like this project, don't forget to ⭐ the repo!
+</div> ```
