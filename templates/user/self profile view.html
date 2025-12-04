@@ -1,0 +1,51 @@
+{% extends 'user/user_home.html' %}
+{% block body %}
+    <style>
+        body {
+            background-color: #f7f9fc;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 400px; /* Limit width for simplicity */
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center all text */
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px; /* Adjust font size */
+        }
+        .user-info img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+            width: 80px; /* Set a fixed size for the image */
+            height: 80px;
+        }
+        .btn-custom {
+            width: 100%;
+            margin-top: 10px; /* Add margin for spacing */
+        }
+    </style>
+
+    <div class="container">
+        <h2>User Details</h2>
+        <div class="user-info">
+            <img src="../media/{{ val.photo }}" alt="User Photo">
+            <h5>Name: {{ val.name }}</h5>
+            <p>Age: {{ val.age }}</p>
+            <p>Gender: {{ val.gender }}</p>
+            <p>Email: {{ val.email }}</p>
+            <p>Phone: {{ val.phone }}</p>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}

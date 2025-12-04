@@ -1,0 +1,150 @@
+{% extends 'admin/Adminhome2.html' %}
+
+{% block body %}
+<style>
+    /* Global Styles */
+    body {
+        background-color: #f4f6f9;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Main Container */
+    .unique-container {
+        margin-top: 50px;
+        padding: 40px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .unique-container:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Heading Style */
+    .unique-heading {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+        color: #333;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    /* Form Group Styles */
+    .unique-form-group {
+        margin-bottom: 20px;
+    }
+    .unique-form-group label {
+        font-weight: 500;
+        color: #555;
+    }
+
+    /* Input & Select Styles */
+    .unique-form-control {
+        border-radius: 8px;
+        height: 45px;
+        border: 1px solid #ced4da;
+        padding: 0 15px;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .unique-form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    }
+
+    /* Textarea Styles */
+    textarea.unique-form-control {
+        height: 200px;
+        resize: vertical;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    /* Button Styles */
+    .unique-btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        border-radius: 30px;
+        padding: 12px;
+        font-weight: 500;
+        color: white;
+        width: 100%;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease-in-out;
+    }
+    .unique-btn-primary:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .unique-container {
+            padding: 20px;
+        }
+        .unique-heading {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Add subtle animations */
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .unique-container {
+        animation: fadeIn 1s ease-in-out;
+    }
+</style>
+
+<body>
+    <div class="unique-container">
+        <h3 class="unique-heading">Add Example Programs</h3>
+        <form id="unique-exampleForm" action="/addsampleprogram_post" method="post">
+            {% csrf_token %}
+            <!-- Language Selection -->
+            <div class="unique-form-group">
+                <label for="unique-language">Select Language:</label>
+                <select name="language" id="unique-language" class="unique-form-control">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                </select>
+            </div>
+
+            <!-- Topic Input -->
+            <div class="unique-form-group">
+                <label for="unique-topic">Topic:</label>
+                <input type="text" name="topic" id="unique-topic" class="unique-form-control" placeholder="Enter the program name" />
+            </div>
+
+            <!-- Code Example Textarea -->
+            <div class="unique-form-group">
+                <label for="unique-exampleCode">Code Example:</label>
+                <textarea id="unique-exampleCode" name="examplecode" class="unique-form-control" rows="12" placeholder="Enter your code here..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="unique-btn-primary">
+                <i class="fas fa-paper-plane"></i> Submit
+            </button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+{% endblock %}

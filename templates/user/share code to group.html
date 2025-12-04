@@ -1,0 +1,97 @@
+{% extends 'user/user_home.html' %}
+{% block body %}
+   <style>
+{#        body {#}
+{#            background-color: #f4f6f9;#}
+{#            font-family: 'Poppins', sans-serif;#}
+{#        }#}
+{#        .container {#}
+{#            margin-top: 50px;#}
+{#            padding: 30px;#}
+{#            border-radius: 12px;#}
+{#            background-color: white;#}
+{#            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);#}
+{#            max-width: 700px;#}
+{#        }#}
+{#        h3 {#}
+{#            text-align: center;#}
+{#            margin-bottom: 30px;#}
+{#            font-weight: 600;#}
+{#            color: #333;#}
+{#        }#}
+{#        .form-group label {#}
+{#            font-weight: 500;#}
+{#            color: #555;#}
+{#        }#}
+{#        .form-control {#}
+{#            border-radius: 8px;#}
+{#            height: 45px;#}
+{#            border: 1px solid #ced4da;#}
+{#            transition: all 0.3s ease-in-out;#}
+{#        }#}
+{#        .form-control:focus {#}
+{#            border-color: #80bdff;#}
+{#            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);#}
+{#        }#}
+{#        textarea.form-control {#}
+{#            height: auto;#}
+{#            resize: vertical;#}
+{#            padding: 15px;#}
+{#        }#}
+{#        .btn-primary {#}
+{#            background-color: #007bff;#}
+{#            border-color: #007bff;#}
+{#            border-radius: 30px;#}
+{#            padding: 12px;#}
+{#            font-weight: 500;#}
+{#            width: 100%;#}
+{#            transition: background-color 0.3s ease;#}
+{#        }#}
+{#        .btn-primary:hover {#}
+{#            background-color: #0056b3;#}
+{#        }#}
+{#        @media (max-width: 768px) {#}
+{#            .container {#}
+{#                padding: 20px;#}
+{#            }#}
+{#        }#}
+    </style>
+<body>
+    <div class="container">
+        <h3>Share Code To Group</h3>
+        <form id="exampleForm" action="share_code_to_group_post" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="language">Select Language:</label>
+                <select name="language" id="language" class="form-control">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Status:</label>
+                <select name="status" id="language" class="form-control">
+                    <option value="Static">Static</option>
+                    <option value="Editable">Editable</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Topic">Topic:</label>
+                <input type="text" name="topic" id="topic" class="form-control" placeholder="Enter the program name" />
+            </div>
+            <div class="form-group">
+                <label for="exampleCode">Code Example:</label>
+                <textarea id="exampleCode" name="examplecode" class="form-control" rows="12" placeholder="Enter your code here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">share</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
