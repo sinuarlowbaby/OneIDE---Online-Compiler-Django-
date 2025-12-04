@@ -65,8 +65,8 @@ This platform provides a robust **online compiler** for multiple languages, a co
 ### 🛠️ Tech Stack
 
   * **Backend Framework:** Django (Python)
-  * **Database:** SQLite (Default Django DB) / MySQL (Compatible)
-  * **Frontend:** HTML, CSS, JavaScript, Bootstrap (Jinja2 Templating)
+  * **Database:** MySQL 
+  * **Frontend:** HTML, CSS, JavaScript, Bootstrap
   * **Authentication:** Django Auth System
   * **Email Services:** Python `smtplib` for email notifications
 
