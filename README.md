@@ -108,6 +108,41 @@ This platform provides a robust **online compiler** for multiple languages, a co
 6.  **Access the Application:**
     Open your browser and navigate to `http://127.0.0.1:8000/`.
 
+7. **DataBase setup**⚙️ Import Instructions
+To set up the database using the provided SQL file (SQLyog/MySQL Dump), follow these steps:
+
+Option 1: Using Command Line (MySQL)
+Create the Database:
+
+SQL
+
+CREATE DATABASE oneide;
+Import the SQL File: Navigate to the folder containing your .sql file and run:
+
+Bash
+
+mysql -u [your_username] -p oneide < oneide_dump.sql
+Option 2: Using Django (Fresh Start)
+If you prefer to ignore the dump and create fresh tables based on your models.py:
+
+Bash
+
+# Delete existing migrations (optional)
+# Create the database 'oneide' in your SQL server
+python manage.py makemigrations
+python manage.py migrate
+🧩 Relationship Diagram (Simplified)
+Code snippet
+
+erDiagram
+    LOGIN ||--|| USER : credentials
+    USER ||--o{ CODE : saves
+    USER ||--o{ GROUP : creates
+    GROUP ||--|{ MEMBER : contains
+    USER ||--|{ MEMBER : joins
+    USER ||--o{ FEEDBACK : writes
+    USER ||--o{ SHARE_P2P : sends
+    GROUP ||--o{ SHARE_GROUP : receives
 
 ## 🛠️ Tech Stack
 
