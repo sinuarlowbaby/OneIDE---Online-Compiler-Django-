@@ -12,9 +12,10 @@
 
 ### ⚡ *Compile. Collaborate. Connect.*
 
-A powerful **online compiler + coding community platform** with real-time execution, group collaboration, and admin control.
+A powerful **online compiler and coding community platform** with real-time execution, collaboration, and admin control.
 
-[🐞 Report Bug](https://github.com/your-username/your-repo-name/issues) • [✨ Request Feature](https://github.com/your-username/your-repo-name/issues)
+[🐞 Report Bug](https://github.com/your-username/your-repo-name/issues) • 
+[✨ Request Feature](https://github.com/your-username/your-repo-name/issues)
 
 </div>
 
@@ -22,56 +23,56 @@ A powerful **online compiler + coding community platform** with real-time execut
 
 ## 📖 Overview
 
-**OneIDE** is a full-stack web application that offers:
+**OneIDE** is a complete web-based coding platform that provides:
 - A **multi-language online compiler**
-- A **coding community for sharing programs**
-- **Group collaboration** with permissions
-- A complete **admin dashboard** for moderation  
+- A **community for sharing code**
+- **Group-based collaboration**
+- A full **admin dashboard for moderation**
 
-It bridges the gap between **learning to code** and **collaborative software development**.
+It bridges the gap between **learning, practicing, and collaborating on code**.
 
 ---
 
 ## ✨ Features
 
 ### 🔐 User Authentication & Management
-- ✅ Secure Login & Registration  
-- ✅ Role-Based Access (Admin / User)  
-- ✅ Forgot Password via Email (SMTP)  
-- ✅ Profile Management with Image Upload  
-- ✅ Admin Blocking & Unblocking of Users  
+- Secure Login & Registration  
+- Role-Based Access (Admin & User)  
+- Forgot Password via Email (SMTP)  
+- Profile Management with Image  
+- Admin can Block/Unblock Users  
 
 ---
 
 ### 💻 Online Compiler & Coding Tools
-- 🌍 Supports **Python, Java, C, C++**
-- ⚡ Real-time Code Execution
-- 💾 Save Programs with Topic, Language & Date
-- 🕒 View Code Execution History
-- ✏️ Edit & Update Saved Programs
+- Supports **Python, Java, C, C++**
+- Real-time Code Execution
+- Save Code with Topic & Language
+- View Execution History
+- Edit & Update Saved Code
 
 ---
 
 ### 🤝 Community & Collaboration
-- 🔄 **Code Sharing**
+- **Code Sharing**
   - Individual Sharing
   - Group Sharing (Static / Editable)
-- 👥 **Group Management**
+- **Group Management**
   - Create Groups with Icons
-  - Add/Remove Members
+  - Add / Remove Members
   - Assign Roles (Admin, User)
-- ⭐ Feedback & Rating System
-- 📢 Complaint System with Admin Replies
-- 📚 Library of Example Programs
+- Feedback & Rating System
+- Complaint System with Admin Replies
+- Example Program Library
 
 ---
 
 ### 🛠️ Admin Dashboard
-- 👤 View & Manage Users
-- 🚫 Block / Unblock Accounts
-- 🧾 Monitor Shared Code
-- 📬 Handle Complaints & Feedback
-- 📖 Manage Example Programs
+- View & Manage Users
+- Block / Unblock Accounts
+- Monitor Shared Code
+- Handle Complaints & Feedback
+- Manage Example Programs
 
 ---
 
@@ -79,11 +80,11 @@ It bridges the gap between **learning to code** and **collaborative software dev
 
 | Layer | Technology |
 |------|------------|
-| **Backend** | Django, Python |
-| **Frontend** | HTML, CSS, JavaScript, Bootstrap |
-| **Database** | MySQL |
-| **Auth** | Django Auth System |
-| **Email** | SMTP (`smtplib`) |
+| Backend | Django, Python |
+| Frontend | HTML, CSS, JavaScript, Bootstrap |
+| Database | SQLite (Development), MySQL (Production) |
+| Authentication | Django Auth System |
+| Email Service | SMTP (smtplib) |
 
 ---
 
@@ -93,43 +94,60 @@ It bridges the gap between **learning to code** and **collaborative software dev
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-2️⃣ Install Dependencies
-bash
-Copy code
+```
+
+### 2️⃣ Install Dependencies
+```bash
 pip install django
-3️⃣ Run Migrations
-bash
-Copy code
+```
+
+### 3️⃣ Run Migrations
+```bash
 python manage.py makemigrations
 python manage.py migrate
-4️⃣ Create Admin
-bash
-Copy code
+```
+
+### 4️⃣ Create Admin User
+```bash
 python manage.py createsuperuser
-5️⃣ Start Server
-bash
-Copy code
+```
+
+### 5️⃣ Start Development Server
+```bash
 python manage.py runserver
-6️⃣ Open in Browser
-cpp
-Copy code
+```
+
+### 6️⃣ Open in Browser
+```
 http://127.0.0.1:8000/
-🗄️ Database Setup
-✅ Option 1: Import SQL Dump
-sql
-Copy code
+```
+
+---
+
+## 🗄️ Database Setup
+
+### ✅ Option 1: Import SQL Dump
+```sql
 CREATE DATABASE oneide;
-bash
-Copy code
+```
+
+```bash
 mysql -u your_username -p oneide < oneide_dump.sql
-✅ Option 2: Fresh Django Setup
-bash
-Copy code
+```
+
+---
+
+### ✅ Option 2: Fresh Django Setup
+```bash
 python manage.py makemigrations
 python manage.py migrate
-🧩 ER Relationship (Simplified)
-pgsql
-Copy code
+```
+
+---
+
+## 🧩 ER Relationship (Simplified)
+
+```
 LOGIN ||--|| USER : credentials
 USER  ||--o{ CODE : saves
 USER  ||--o{ GROUP : creates
@@ -138,9 +156,13 @@ USER  ||--|{ MEMBER : joins
 USER  ||--o{ FEEDBACK : writes
 USER  ||--o{ SHARE_P2P : sends
 GROUP ||--o{ SHARE_GROUP : receives
-📂 Project Structure
-pgsql
-Copy code
+```
+
+---
+
+## 📂 Project Structure
+
+```
 app/
 ├── migrations/
 ├── static/
@@ -155,21 +177,29 @@ app/
 ├── tests.py
 ├── urls.py
 └── views.py
-🤝 Contributing
-Fork the Repository
+```
 
-Create a Feature Branch
+---
 
-Commit Your Changes
+## 🤝 Contributing
 
-Push to Your Branch
+1. Fork the Repository  
+2. Create a Feature Branch  
+3. Commit Your Changes  
+4. Push to Your Branch  
+5. Open a Pull Request  
 
-Open a Pull Request
+---
 
-📄 License
-This project is licensed under the MIT License ✅
-Free to use for educational and commercial purposes.
+## 📄 License
+
+This project is licensed under the **MIT License** ✅  
+Free for **educational and commercial use**.
+
+---
 
 <div align="center">
-💙 If you like this project, don't forget to ⭐ the repo!
-</div> ```
+
+### ⭐ If you like this project, don't forget to give it a star!
+
+</div>
